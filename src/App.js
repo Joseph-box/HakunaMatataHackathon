@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Registration from "./pages/registration";
+import Registration from "./pages/Registration";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
