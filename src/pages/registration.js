@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 // import * as Yup from "yup";
 import FormikControl from "../components/FormikControl";
+import { addUser } from "../lib/api";
 function CourseEnrolmentForm() {
   const notificationOptions = [
     { key: "Email", value: "email" },
@@ -29,6 +30,7 @@ function CourseEnrolmentForm() {
 
   const onSubmit = (values) => {
     console.log("Form data", values);
+    addUser(values);
   };
 
   return (
